@@ -1,0 +1,99 @@
+
+
+.menu {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 270px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  
+}
+
+.menu li {
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.break_line {
+  display: block;
+  width: 100%;
+  background-color: #B5B2B2;
+  height: 5px;
+  
+}
+
+
+
+.menu li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.48);
+  border-radius: 10px;
+
+}
+
+.menu_bot:hover {
+
+}
+
+.menu_top:hover {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'montserrat_bold';
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  opacity: 100% !important;
+}
+
+.menu_svg {
+  width: 50px;
+  height: 50px;
+}
+
+.menu_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  padding-left: 0 !important;
+  height: 55px !important;
+  
+}
+
+.menu_bot {
+  text-align: center;
+  justify-content: center;
+  border-bottom: none !important;
+  padding-left: 0 !important;
+  height: 55px !important;
+}
+
+
+
+.menu_svg_top {
+  width: 40px;
+  height: 40px;
+}
+
+.fat_grot_span {
+  font-family: 'FatGrot';
+  font-size: 15px;
+}

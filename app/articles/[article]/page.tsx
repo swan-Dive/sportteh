@@ -5,7 +5,6 @@ export default function Article({params} : {params : {article : string}}) {
   const article = getArticle(params.article)
   return (
     <div className="main">
-      
     </div>
   )
 }

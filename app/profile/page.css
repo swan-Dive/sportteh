@@ -1,0 +1,23 @@
+.profile_wrap {
+
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 25px;
+  width: 80%;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.all_pr_wrap {
+  display: flex;
+ 
+}
+
+.all_pr_wrap img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+

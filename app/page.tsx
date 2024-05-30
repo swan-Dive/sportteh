@@ -1,30 +1,32 @@
 import Link from "next/link";
 import "./page.css"
-import { cookies } from "next/headers";
-export default function Home() {
-    {console.log(cookies().get('token'))}
+import { getSession } from "@/actions/auth";
+
+
+export default async function Home() {
+  const session = await getSession()
   return (
     <div className="main">
-        <div className="main_center">
+    <div className="main_center">
         <h1 className="main_words">СПОРТ ДЛЯ ВСЕХ<br/> И КАЖДОГО</h1>
         <p>С НАМИ КАЖДЫЙ МОЖЕТ СТАТЬ ЧЕМПИОНОМ</p>
         <div className="wrapper">
         <div className="cards">
-            <div className="card">
+            <div className="card first">
                 <h2><img src={"/images/cont.png"}/>Участнику</h2>
                 <p className="under_text">10 000+ чел. по всей России</p>
                 <p>Возможность найти<br/>единомышленников</p>
                 <p>Постоянные турниры<br/> с ценными призами</p>
                 <p>Все о спорте<br/> и здоровом образе жизни</p>
             </div>
-            <div className="card">
+            <div className="card second">
                 <h2><img src={'/images/vol.png'}/>Волонтеру</h2>
                 <p className="under_text">10 000+ чел. по всей России</p>
                 <p>Самые масштабные<br/> мероприятия по России </p>
                 <p>Система лояльности<br/> для волонтеров</p>
                 <p>Возможность<br/> бесплатного обучения</p>
             </div>
-            <div className="card">
+            <div className="card third">
                 <h2><img src={"/images/org.png"}/>Организатору</h2>
                 <p className="under_text">100+ мероприятий в год по всей России</p>
                 <p>Мощная площадка для<br/> вашего продвижения</p>
@@ -33,8 +35,7 @@ export default function Home() {
             </div>
         </div>
        
-        <Link href="/register"> <button className="join_us" >Присоединиться</button></Link>
-       
+        {!session?.userEmail ? <Link href="/register"> <button className="join_us" >Присоединиться</button></Link> : <></>}
         </div>
     </div>
 

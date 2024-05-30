@@ -25,6 +25,25 @@
   border-radius: 10px;
 }
 
+.menu form  {
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu form > button {
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .break_line {
   display: block;
   width: 100%;

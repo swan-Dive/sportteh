@@ -1,0 +1,20 @@
+.card {
+  transition: all 0.3s ease;
+}
+.card p{
+  transition: all 0.3s ease;
+}
+
+.first:hover, .second:hover, .third:hover {
+
+  width: 35%;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  background-position: -120px;
+}
+
+.card:hover p {
+
+  font-size: 18px;
+  transition: all 0.3s ease;
+}

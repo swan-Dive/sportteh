@@ -4,7 +4,11 @@
   font-family: 'montserrat_bold';
   font-size: 20px;
   flex-direction: column;
-  cursor: pointer;
+    
+}
+
+.article > * {
+  transition: all 0.3s ease;
 }
 
 .article img {
@@ -72,3 +76,12 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.article:hover img{
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 230px;
+}
+
+.article:hover > .article_separator{
+  width: 350px;
+}
